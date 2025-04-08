@@ -2,8 +2,55 @@
 
 :root {
     --bs-body-font-family: "Poppins", sans-serif;
+    --bg-tamna: #1A1D1F;
 }
 
 .bg-tamna {
-    background-color: #1A1D1F;
+    background-color: var(--bg-tamna);
+}
+
+.text-svijetli {
+    color: #c4c4c4;
+}
+
+.transparent-nav {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled-nav {
+    background-color: var(--bg-tamna);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.header-dynamic-font {
+    font-size: 16px;
+}
+
+@media (min-width: 426px) {
+    .header-dynamic-font {
+        font-size: 18px;
+    }
+}
+@media (min-width: 769px) {
+    .header-dynamic-font {
+        font-size: 22px;
+    }
+}
+
+
+.paragraph-dynamic-font {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 426px) {
+    .paragraph-dynamic-font {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .paragraph-dynamic-font {
+        font-size: 1.05rem;
+    }
 }

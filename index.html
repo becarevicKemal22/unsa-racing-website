@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        <title>UNSA Racing Team</title>
-    </head>
-    <body>
-        <div class="bg-tamna text-white" id="app">
-            <header id="header"></header> <!-- U ovu komponentu se ucitava header preko main.js-->
-        </div>
-        <script type="module" src="/src/main.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <title>UNSA Racing Team</title>
+
+</head>
+<body>
+<div class="bg-tamna text-white" id="app">
+    <header></header> <!-- U ovu komponentu se ucitava header preko main.js-->
+    <main>
+        <img class="img-fluid w-100 vh-100 object-fit-cover" src="/temp.png" alt="">
+        <section class="p-3 p-md-4 p-xl-5 mt-4 container-xxl">
+            <div class="mb-3">
+                <h1 class="display-2">About us</h1>
+                <div class="d-flex flex-column align-items-center flex-xl-row gap-5">
+                    <div class="flex-grow-1" style="flex-basis: 60%;">
+                        <p class="lh-lg text-svijetli paragraph-dynamic-font pt-1">
+                            The UNSA Racing Team is a formula student team situated at the University of Sarajevo.
+                            Founded in 2024, our team consists of passionate students driven by a shared enthusiasm for
+                            motorsports and automotive innovation. Our participation in the Formula Student competition
+                            marks a significant milestone in our journey to apply theoretical knowledge to real-world
+                            engineering challenges.
+                            <br><br>
+                            The student team is closely aligned with the academic goals of the University. Our
+                            involvement in the competition complements classroom learning by offering students the
+                            opportunity to apply theoretical concepts in a real-world context. Through participation in
+                            Formula Student, students enhance their problem-solving abilities, critical thinking skills,
+                            and technical expertise.
+                        </p>
+                    </div>
+
+                    <div style="flex-basis: 40%;">
+                        <img class="img-fluid" style="max-height: 75vh;" src="/timska.webp" alt="Slika tima">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 row">
+                <div class="d-flex flex-column flex-xl-row align-items-xl-center">
+                    <h1 class="display-2 col-12 col-xl-4 ">What is Formula Student?</h1>
+                    <p class="col-12 col-xl-8 lh-lg text-svijetli paragraph-dynamic-font">
+                        Formula Student is a global engineering competition that challenges university students to
+                        design,
+                        build, and race in a formula-style event. Teams from all around the world participate in this
+                        annual
+                        event, showcasing their skills and knowledge in areas such as design, manufacturing, testing,
+                        and business presentation.
+                        <br>
+                        <br>
+                        The competition not only emphasizes the technical aspects of building a high-performance race
+                        car but also encourages students to develop project management and teamwork skills.
+                        Participants must adhere to strict rules and regulations while pushing the boundaries of
+                        innovation to create a competitive vehicle.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
 </html>
